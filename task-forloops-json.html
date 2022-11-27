@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [{
+    "name" : "Harish", 
+    "age"   : "23",
+    "address" : "coimbatore",
+    "mail": "natrajkhari@gmail.com"
+},
+{
+    "name" : "Harish1", 
+    "age"   : "24",
+    "address" : "chennai",
+    "mail": "natrajhari@gmail.com"
+}];
+//for loop
+for(var i = 0; i < arr.length; i++) {
+    var compute = arr[i];
+
+    console.log(compute.name);
+    console.log(compute.age);
+    console.log(compute.address);
+    console.log(compute.mail);
+
+}
+//for Each
+arr.forEach(function(compute) { console.log(compute.age); });
+
+//for In
+for (var i in arr) {
+
+  console.log(arr[i].address);
+
+}
+//for Of
+for (let x of arr) {
+    console.log(x.mail);
+}
+ 
+    </script>
+</body>
+</html>
